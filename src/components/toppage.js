@@ -4,15 +4,11 @@ import imageEat from './../img/toppage_eat.jpeg';
 import imageLive from './../img/toppage_live.jpeg';
 import SlideRoutes from "react-slide-routes";
 import { Route, NavLink, useLocation } from "react-router-dom";
-import TopPage from './toppage';
 import Eat from './eat';
 import logo from './../img/logo_shiro.png';
 import './toppage.css'
 
-const Home = () => {
-
-  const location = useLocation();
-
+const TopPage = () => {
   return (
     <div>
       <div className="toppage">
@@ -22,14 +18,14 @@ const Home = () => {
       <h1>生きること。</h1>
       </div>
       <div className="bannar">
-      <nav className="farmers_btn">
-        <NavLink to="/eat">
-          <a className="eat_btn">
-            <h2>たべる</h2>
-            <h4>あなた好みのお肉を選ぶ</h4>
-          </a>
-        </NavLink>
-      </nav>
+        <nav>
+          <NavLink to="/eat">
+            <div  className="eat_btn">
+              <h2>たべる</h2>
+              <h4>あなた好みのお肉を選ぶ</h4>
+            </div>
+          </NavLink>
+        </nav>
         <a className="live_btn">
           <h2>育てる</h2>
           <h4>あなたの休日を牛とともに</h4>
@@ -128,13 +124,20 @@ const Home = () => {
         <p>福岡県福岡市中央区大名1-3-41</p>
         <a>問い合わせ</a>
       </div>
-      {/* <div>
-        <SlideRoutes location={location} duration={500}>
-          <Route path="/" component={TopPage} exact />
-          <Route path="/eat" component={Eat} />
-        </SlideRoutes>
-      </div> */}
+    </div>
+  );
+};
+
+const App = () => {
+  const location = useLocation();
+
+  return (
+    <div>
+      <SlideRoutes location={location} duration={500}>
+        <Route path="/" component={TopPage} exact />
+        <Route path="/eat" component={Eat} />
+      </SlideRoutes>
     </div>
   )};
 
-export default Home
+export default App

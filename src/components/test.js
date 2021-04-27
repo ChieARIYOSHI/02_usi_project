@@ -1,6 +1,8 @@
 import React from "react";
 import SlideRoutes from "react-slide-routes";
 import { Route, NavLink, useLocation } from "react-router-dom";
+import Eat from './eat';
+
 const Home = () => <div style={styles.home}>Home</div>;
 const About = () => <div style={styles.about}>About</div>;
 const Contact = () => <div style={styles.contact}>Contact <NavLink to="/about">About</NavLink></div>;

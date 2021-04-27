@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import {db} from '../firebase';
 
-const Upload_meat = () => {
+const UploadMeat = () => {
 const [farm, setFarm] =useState()
 const [product, setProduct] =useState()
 const [price, setPrice] =useState()
@@ -45,4 +45,4 @@ const [detail, setDetail] =useState()
     </div>
   );
 };
-export default Upload_meat
+export default UploadMeat

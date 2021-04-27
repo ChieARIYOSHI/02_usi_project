@@ -2,9 +2,8 @@ import React from 'react';
 import rogo from './../img/eat_1.jpg';
 import './eat.css';
 
-
-
-const Head = () => (
+const Head = () => {
+    return (
     <div>
         <img src={rogo} className="rogo" width="100%" alt="logo" margin-top="100px 0" />
         <h1 className="subtitle">あなた好みの</h1>
@@ -39,10 +38,8 @@ const Head = () => (
 
         </p>
         </div> */}
-
-
     </div>
-);
+)};
 
 
 

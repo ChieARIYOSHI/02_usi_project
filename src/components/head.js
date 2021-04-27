@@ -1,4 +1,5 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 import logo from './../img/logo_kuro.png';
 import IconButton from '@material-ui/core/IconButton';
 import { makeStyles } from '@material-ui/core/styles';
@@ -10,7 +11,8 @@ import SlideRoutes from "react-slide-routes";
 import { Route, NavLink, useLocation } from "react-router-dom";
 import TopPage from './toppage';
 import SignUp from './signup';
-import firebase from './../firebase';
+// import UploadMeat from './upload_meat';
+
 import './head.css'
 
 // ナビゲーションボタン

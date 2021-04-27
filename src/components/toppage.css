@@ -16,13 +16,16 @@
 
 .bannar {
   color: white;
+  text-decoration: none;
   background-color: rgb(172, 196, 118);
   display: flex;
   justify-content: space-around;
 }
 
 .eat_btn {
+  color: white;
   text-align: center;
+  text-decoration: none;
 }
 
 .eat_btn:hover {
